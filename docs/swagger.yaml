@@ -1,0 +1,33 @@
+basePath: /
+host: localhost:8080
+info:
+  contact:
+    email: support@bits.com
+    name: BITS Support
+  description: APIs for managing payments by BITS.
+  title: x-pay API
+  version: "1.0"
+paths:
+  /:
+    get:
+      consumes:
+      - application/json
+      description: get the status of the x-pay server.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Show the status of the x-pay server.
+      tags:
+      - example
+securityDefinitions:
+  ApiKeyAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

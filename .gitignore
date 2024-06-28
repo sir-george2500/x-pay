@@ -1,0 +1,33 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Dependency directories (remove these if you are using modules)
+/vendor/
+/Godeps/
+
+# Compiled output
+*.o
+*.a
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# IDE/Editor specific files
+.idea/
+.vscode/
+*.swp
+*~
+
+# Log files
+*.log
+
+# Environment files
+.env
+
+# Binary distributions (remove these if using go modules)
+/bin/
+
