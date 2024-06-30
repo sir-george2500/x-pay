@@ -45,7 +45,6 @@ func main() {
         })
     })
 
-    // Database connection test route
     router.GET("/ping", func(c *gin.Context) {
         if err := config.PingDB(); err != nil {
             c.JSON(http.StatusInternalServerError, gin.H{
